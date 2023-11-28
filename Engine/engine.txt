@@ -1,0 +1,22 @@
+The goals of this game engine:
+    //create a window that works (minimize, exit, maximize, etc).
+        research how Windows interfacing works to create windows and use them
+    Display an image on a window.
+        research how to send graphical signals to gpu and display stuff
+    (maybe jump to optional proj)
+    Output audio to device.
+        generate audio signals, create and modify them, output them
+    Take user input from keyboard and mouse.
+        interfacing with windows again to get user input and interrupts 
+    update screen n times per second, implement counter or clock or similar device to control timing of programs.
+        implement clock and counter to control the timing of the screen updating to create an FPS
+    Implement some preservation of state, aka storing and retreiving data
+	be able to load a save file, or retain data after closing program
+
+    Someday far future:
+        make a simple game
+        render scenes (simple 2d)
+        full documentation and github version control etiquette
+        create an executable made from the game
+
+(optional mini project): make an MS paint clone to help develop our understanding of some of the above goals.

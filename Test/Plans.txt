@@ -1,0 +1,44 @@
+
+coords = {x, y} -> pos = 8*x + y + 1
+
+
+Rook
+curpos = x < [0,63]
+curpos = 0
+ulong  potmoves = 1<<curpos
+0x 00 00 00 00 00 00 00 01 -> 0x01 01 01 01 01 01 01 FE 	potmoves
+0x FF FF 00 00 00 00 FF FF 		piecemask
+
+0x 01 01 00 00 00 00 01 FE 		moves&mask -> x
+0x FE FE FF FF FF FF FE 01		!x
+
+0x 00 00 01 01 01 01 00 00		!x & pot moves
+
+for i in range(64):
+	if(potmoves %2):
+		highlight square
+	potmoves >> 1
+
+Bishop
+curpos = 2
+potmoves = 1<<2
+0x00 00 00 00 00 00 00 04 -> 0x 00 00 80 40 20 11 0A 00
+
+King
+curpos = 44
+potmoves = 1<<44
+0x00 00 00 08 00 00 00 00 -> 00 00 1C 14 1C 00 00 00
+
+Queen
+curpos = 51
+potmoves = 1<<51
+0x 00 04 00 00 00 00 00 00 -> 0E FB 0E 11 20 40 80 00
+
+Pawn
+curpos = 16
+potmoves = 1<<16
+0x 00 00 00 00 00 01 00 00 -> 00 00 00 00 03 00 00 00
+
+Knight curpos = 1
+potmoves = 1<<1
+0x00 00 00 00 00 00 00 02 -> 00 00 00 00 00 05 00 00

@@ -1,0 +1,31 @@
+This document is meant to be a development log for this project where we can keep track of goals to meet and those that have already been met.
+
+****************************************************
+	Goal: insert goal here - (status) - (date)
+	(if reached) 
+	How we avchieved this goal.
+****************************************************
+
+****************************************************
+	To begin we had to learn how to use direct2d to even draw a board and pieces - complete - early 10-2023
+	We accomplished this by using bitmaps loaded from pngs
+****************************************************
+	Implement control of pieces by click to select a piece and highlight it, then click again to move it and take pieces - complete - 10-12-2023
+	This was accomplished with a flag set on click if a piece is clicked, which then highlights that square and redraws the piece, then if the flag is set move the piece to the clicked square.
+****************************************************
+	Create highlights for all legal moves given the position and type of piece selected - complete - NA
+****************************************************
+	Restrict piece movements to only legal moves and turn order - complete - NA
+****************************************************
+	Let the player castle - in progress - NA
+****************************************************
+	Upkeep and display the value of each players board state - in progress - NA
+****************************************************
+	Implement check and check mate and define an end to the game - in progress - NA
+****************************************************
+	Implement, enforce, and display a timer that each player must follow - in progress - NA
+****************************************************
+	Create a simple bot to let you play the game - in progress - NA
+****************************************************
+	Create a complex and strong chess bot - in progress - NA
+****************************************************
